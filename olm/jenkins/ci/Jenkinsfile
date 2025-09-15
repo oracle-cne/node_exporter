@@ -1,0 +1,13 @@
+@Library('olcne-pipeline') _
+import com.oracle.olcne.pipeline.BranchPattern
+
+String imageTag = "v1.9.1"
+
+olcnePipeline(
+        branchPattern: new BranchPattern(master: 'oracle/release/1.9.1', feature: '(?!^release/.*$)(^.*$)'),
+        containers: [('container-registry.oracle.com/olcne/node-exporter:' + imageTag ): 'olcne/node-exporter:' + imageTag],
+        architectures: ['x86_64', 'aarch64'],
+        platforms: ['ol8'],
+        publishImage: true,
+        yumOL8Repos: ['ol8_appstream', 'ol8_codeready_builder']
+)
