@@ -1,0 +1,1 @@
+github.com/dennwc/ioctl@v1.0.0 MIT
