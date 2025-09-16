@@ -16,5 +16,3 @@ ldflags="
 go build -trimpath=false -v -o bin/node-exporter \
     -ldflags "${ldflags}"
 
-./bin/alertmanager --version
-./bin/amtool --version
