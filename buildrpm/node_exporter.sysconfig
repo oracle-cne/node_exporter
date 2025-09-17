@@ -1,5 +1,0 @@
-# config options for node-exporter
-#
-#
-
-# example: OPTIONS="--collector.textfile.directory /var/lib/node_exporter/textfile_collector"
