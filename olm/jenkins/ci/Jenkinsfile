@@ -8,6 +8,5 @@ imagePipeline(
         containers: [('container-registry.oracle.com/olcne/node-exporter:' + imageTag ): 'olcne/node-exporter:' + imageTag],
         architectures: ['x86_64', 'aarch64'],
         platforms: ['ol9'],
-        yumOL8Repos: ['ol9_appstream', 'ol9_codeready_builder'],
         buildScript: "sh olm/build-image.sh"
 )
