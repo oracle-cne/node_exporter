@@ -18,10 +18,9 @@ FROM container-registry.oracle.com/os/oraclelinux:9-slim
 
 COPY LICENSE THIRD_PARTY_LICENSES.txt olm/SECURITY.md /usr/share/licenses/node_exporter/
 # Our entrypoint is intentionally bin/node_exporter to mimic the upstream repo used by Prometheus
-COPY --from=builder bin/node-exporter /usr/bin/node_exporter
+COPY --from=builder /workspace/go/src/github.com/oracle-cne/node_exporter/bin/node-exporter /usr/bin/node_exporter
 RUN microdnf update -y &&\
     microdnf clean all &&\
-    rm -rf /var/cache/yum/* &&\
     test -d /LICENSES || ln -s /usr/share/licenses /LICENSES
 
 EXPOSE 9100
