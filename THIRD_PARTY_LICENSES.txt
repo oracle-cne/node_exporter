@@ -169,7 +169,16 @@ github.com/dennwc/btrfs
 SPDX:Apache-2.0
 
 == Copyright
-(no copyright notices found)
+Copyright 2016 Denys Smirnov denis.smirnov.91@gmail.com
+Copyright 2017 Denys Smirnov denis.smirnov.91@gmail.com
+Copyright 2018 Denys Smirnov denys@sourced.tech
+Copyright 2019 Denys Smirnov denis.smirnov.91@gmail.com
+Copyright 2021 Denys Smirnov dennwc@protonmail.com
+Copyright 2021 GitHub noreply@github.com
+Copyright 2022 Denys Smirnov dennwc@protonmail.com
+Copyright 2022 GitHub noreply@github.com
+Copyright 2023 Denys Smirnov dennwc@protonmail.com
+Copyright 2024 Denys Smirnov dennwc@protonmail.com
 
 --------------------------------- (separator) ----------------------------------
 
@@ -180,7 +189,7 @@ github.com/dennwc/ioctl
 SPDX:MIT
 
 == Copyright
-(no copyright notices found)
+Copyright 2018 Denys Smirnov denys@sourced.tech
 
 --------------------------------- (separator) ----------------------------------
 
